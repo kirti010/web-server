@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Current Temperature </title>
+	<style>
+
+  html {
+    width: 100%;
+    height: 100%;
+    background: #1192d3 url(
+	
+https://d2zv2b08ioi6ch.cloudfront.net/~/media/images/nutrition%20expert/article%20images/sunny-skyblog.png?h=300&la=en&mh=800&w=607&sc_revision=fc9f4b1245af441c8101a5b2ac9b0bdd
+	
+	) no-repeat bottom right;
+    background-size: cover;
+  }
+  
+  //	https://imagesforprepviser.s3.ap-south-1.amazonaws.com/SF.jpg
+  body {
+    padding: 45px 0;
+    font: 13px 'Open Sans', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  }
+
+  #weather {
+    width: 500px;
+    margin: 0px auto;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  #weather h2 {
+    margin: 0 0 8px;
+    color: #fff;
+    font-size: 100px;
+    font-weight: 300;
+    text-align: center;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+  }
+
+  #weather ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  #weather li {
+    background: #fff;
+    background: rgba(255,255,255,0.90);
+    padding: 20px;
+    display: inline-block;
+    border-radius: 5px;
+  }
+
+  input[type=text], select {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=submit] {
+    width: 10%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  </style>
+  </head>
+	<body>
+   
+		
+		<h1><br><p align="center"><font face="helvetica"size="50%"> <center>Temperature <br>{{ temp }} °F</br> </center></font></br></p></h1>
+		
+	
+		<table align="center" width="70%">
+		<tr>
+		<center>
+		<h1><p align="center">&nbsp<td><font face="helvetica"size="1000%"> Maximum  <br><b>{{ temp_max }} °F</b></br></font></td></p></h1>
+		<h1>&nbsp<td><font face="helvetica"size="50%"> Minimum <br><b>{{ temp_min }} °F</b></br></font></td></h1>
+		
+		<h1><td><font face="helvetica"size="50%"> Humidity <br><b>{{ humidity }}%</b></br></font> </td> </h1>
+		<h1><td><font face="helvetica"size="50%"> Pressure <br><b>{{ pressure }} hpa</b></br></font> </td></h1>
+		</center>
+
+	</tr>
+	</table>
+	</body>
+</html>
